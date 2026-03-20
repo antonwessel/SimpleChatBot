@@ -13,6 +13,13 @@ void main() {
     int age = (remainder3 * REMAINDER_3_MULTIPLIER + remainder5 * REMAINDER_5_MULTIPLIER +
             remainder7 * REMAINDER_7_MULTIPLIER) % AGE_MODULO;
     IO.println("Your age is " + age + "; that's a good time to start programming!");
+
+    IO.println("Now I will prove to you that I can count to any number you want.");
+    int number = Integer.parseInt(IO.readln());
+    for (int i = 0; i <= number; i++) {
+        IO.println(i + "!");
+    }
+    IO.println("Completed, have a nice day!");
 }
 
 public static final int AGE_MODULO = 105;
